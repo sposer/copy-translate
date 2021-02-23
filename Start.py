@@ -28,7 +28,7 @@ class Start():
         root.geometry("%sx%s+%s+%s" % (self.config["win_width"], self.config["win_height"], self.config["win_x"], self.config["win_y"]))
         """ width=self.config["win_width"], height=self.config["win_height"] """
         text = tk.Text(root, undo=True, font=("微软雅黑",self.config["txt_size"]))
-实现能在电脑上读取复制到剪切板的内容并翻译后弹窗的Python语言的脚本
+
         text.insert("insert", txt)
         
         text.pack()
