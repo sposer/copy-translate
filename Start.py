@@ -95,7 +95,11 @@ def closeAWin(root):
     root.update()
 
 def timeToClose(root):
-    closeAWin(root)
+    try:
+        root.state()
+        closeAWin(root)
+    except:
+        pass
 
 
 """ def app_lost_focus(self, event):
